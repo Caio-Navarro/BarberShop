@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#1C1C1C"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MinhaConta">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/barbearia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barbearia"
+            android:textSize="20dp"
+            android:onClick="telaBarbearia"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/tesoura_opa"
+            android:layout_marginRight="260dp"
+            android:layout_marginBottom="618dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:layout_width="105dp"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="250dp"
+            app:layout_constraintTop_toBottomOf="@id/barbearia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agendar"
+            android:textSize="20dp"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:onClick="telaAgendar"
+            android:drawableTop="@drawable/agendar"
+            android:layout_marginBottom="618dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meu Perfil"
+            android:textSize="20dp"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/user_opa"
+            android:layout_marginLeft="260dp"
+            android:layout_marginBottom="618dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/user_branco"
+            android:layout_marginBottom="220dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome: Usuário"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:background="@drawable/text_background"
+            android:layout_marginTop="400dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/telefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefone: (00) 0000-0000"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:background="@drawable/text_background"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/nome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: usuario@email.com"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:background="@drawable/text_background"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/telefone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao3"
+            android:layout_marginTop="100dp"
+            android:onClick="deslogar"
+            android:padding="12dp"
+            android:text="Deslogar"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

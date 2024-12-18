@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#1C1C1C"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaPrincipalBarbearia">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/barbearia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barbearia"
+            android:textSize="20dp"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/tesoura_opa"
+            android:layout_marginRight="260dp"
+            android:layout_marginBottom="717dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:layout_width="105dp"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="260dp"
+            app:layout_constraintTop_toBottomOf="@id/barbearia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agendar"
+            android:textSize="20dp"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/agendar"
+            android:onClick="agendar"
+            android:layout_marginBottom="717dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meu Perfil"
+            android:textSize="20dp"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/user_opa"
+            android:layout_marginLeft="260dp"
+            android:onClick="minhaConta"
+            android:layout_marginBottom="717dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:layout_width="390dp"
+            android:layout_height="650dp"
+            android:layout_marginTop="160dp"
+            android:background="#1C1C1C"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="330dp"
+            android:layout_height="310dp"
+            android:background="@drawable/barber_logo"
+            android:layout_marginBottom="210dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao2"
+            android:layout_marginTop="160dp"
+            android:drawableRight="@drawable/home"
+            android:onClick="sobreNos"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:text="Sobre nós"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao2"
+            android:layout_marginTop="300dp"
+            android:onClick="contato"
+            android:drawableRight="@drawable/tel_logo_white"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:text="Contato"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao2"
+            android:layout_marginTop="440dp"
+            android:drawableRight="@drawable/carrinho"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:text="Valores"
+            android:onClick="valores"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao2"
+            android:layout_marginTop="580dp"
+            android:onClick="nosApoie"
+            android:drawableRight="@drawable/dinheiro"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:text="Nos Apoie"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

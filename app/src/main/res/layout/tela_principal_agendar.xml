@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#1C1C1C"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaPrincipalAgendar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/barbearia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barbearia"
+            android:textSize="20dp"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:onClick="telaPrincipalBarbearia"
+            android:drawableTop="@drawable/tesoura_opa"
+            android:layout_marginRight="260dp"
+            android:layout_marginBottom="630dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:layout_width="105dp"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginBottom="560dp"
+            android:layout_marginRight="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agendar"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:drawableTop="@drawable/agendar"
+            android:layout_marginBottom="630dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meu Perfil"
+            android:textSize="20dp"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/user_opa"
+            android:layout_marginLeft="260dp"
+            android:onClick="minhaConta"
+            android:layout_marginBottom="630dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Serviços"
+            android:textSize="27dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="400dp"
+            android:layout_marginRight="210dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:background="@drawable/quadrado"
+            android:layout_marginBottom="150dp"
+            android:layout_marginRight="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="200dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:buttonTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/tesoura_branca"
+                android:layout_marginBottom="230dp"
+                android:layout_marginRight="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Corte de Cabelo"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:background="@drawable/quadrado"
+            android:layout_marginBottom="150dp"
+            android:layout_marginLeft="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="200dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:buttonTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                android:layout_width="240dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bigode_branco"
+                android:layout_marginBottom="220dp"
+                android:layout_marginLeft="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Barba"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:background="@drawable/quadrado"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="380dp"
+                android:layout_marginRight="200dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:buttonTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/limpeza_branco"
+                android:layout_marginTop="230dp"
+                android:layout_marginRight="205dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Limpeza de Pele"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="450dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:background="@drawable/quadrado"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+            <CheckBox
+                android:id="@+id/cb4"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="380dp"
+                android:layout_marginLeft="200dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:buttonTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/secador_branco"
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Escova"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:layout_marginLeft="288dp"
+                android:layout_marginTop="450dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:onClick="btnAvancar"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/botao3"
+            android:layout_marginTop="670dp"
+            android:drawableRight="@drawable/seta"
+            android:drawablePadding="-20dp"
+            android:padding="12dp"
+            android:text="Avançar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

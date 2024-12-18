@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "493126482863",
+    "project_id": "barbershop-2b733",
+    "storage_bucket": "barbershop-2b733.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493126482863:android:a716ca4d36ac3dfe310d5a",
+        "android_client_info": {
+          "package_name": "com.projeto.barbershop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv7zz8Ybe7SHjCnOgOaa6dD2eR8FZtdHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

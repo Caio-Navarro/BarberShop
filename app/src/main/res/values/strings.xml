@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BarberShop</string>
+    <string-array name="spBarbeiro">
+        <item>João</item>
+        <item>Mateus</item>
+        <item>Gabriel</item>
+    </string-array>
+    <string-array name="spHorarios">
+        <item>9:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>13:30</item>
+        <item>14:30</item>
+        <item>15:30</item>
+        <item>16:30</item>
+        <item>17:30</item>
+    </string-array>
+</resources>
